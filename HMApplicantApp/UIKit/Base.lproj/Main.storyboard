@@ -1,24 +1,119 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="kJc-1b-Jz9">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Dummy Table View Controller-->
+        <scene sceneID="JVT-ZF-0PW">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Fz3-v6-GKE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <tableViewController id="NJy-3E-7LQ" customClass="DummyTableViewController" customModule="HMApplicantApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="xZd-z0-Cif">
+                        <barButtonItem key="rightBarButtonItem" title="Item" id="Hvx-fK-cnY">
+                            <connections>
+                                <segue destination="BYZ-38-t0r" kind="show" id="BRE-X7-27R"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </tableViewController>
+            </objects>
+            <point key="canvasLocation" x="-473" y="12"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="gse-rO-iWW">
+            <objects>
+                <navigationController id="kJc-1b-Jz9" sceneMemberID="viewController">
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics" translucent="NO"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="SGp-Yi-b9g">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <navigationBarAppearance key="standardAppearance"/>
+                        <navigationBarAppearance key="scrollEdgeAppearance"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="NJy-3E-7LQ" kind="relationship" relationship="rootViewController" id="nfW-Pw-E69"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="e8U-j4-uZM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1362" y="12"/>
+        </scene>
+        <!--MEN-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="HMApplicantApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="f2m-ex-Q7p">
+                                <rect key="frame" x="0.0" y="810" width="414" height="86"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b1e-te-iiR">
+                                        <rect key="frame" x="224.5" y="15" width="159.5" height="51"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" image="appleIcon" title="PAY"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Lv-nc-Zqn">
+                                        <rect key="frame" x="8" y="18" width="188" height="51"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="ADD TO BAG">
+                                            <backgroundConfiguration key="background">
+                                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <color key="strokeColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </backgroundConfiguration>
+                                            <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </buttonConfiguration>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemGray4Color"/>
+                                <constraints>
+                                    <constraint firstItem="b1e-te-iiR" firstAttribute="leading" secondItem="4Lv-nc-Zqn" secondAttribute="trailing" constant="10" id="53U-YT-BZB"/>
+                                    <constraint firstAttribute="bottom" secondItem="b1e-te-iiR" secondAttribute="bottom" constant="20" symbolic="YES" id="8m2-Cj-Tqr"/>
+                                    <constraint firstItem="4Lv-nc-Zqn" firstAttribute="top" secondItem="f2m-ex-Q7p" secondAttribute="top" constant="15" id="L8B-MK-D7V"/>
+                                    <constraint firstAttribute="trailing" secondItem="b1e-te-iiR" secondAttribute="trailing" constant="30" id="QEt-33-jLR"/>
+                                    <constraint firstItem="b1e-te-iiR" firstAttribute="top" secondItem="f2m-ex-Q7p" secondAttribute="top" constant="15" id="QV4-gG-Wao"/>
+                                    <constraint firstItem="4Lv-nc-Zqn" firstAttribute="leading" secondItem="f2m-ex-Q7p" secondAttribute="leading" constant="30" id="S36-7r-0eR"/>
+                                    <constraint firstAttribute="height" constant="86" id="S4D-8j-cQS"/>
+                                    <constraint firstAttribute="width" constant="414" id="Ug7-KP-bZk"/>
+                                    <constraint firstAttribute="bottom" secondItem="4Lv-nc-Zqn" secondAttribute="bottom" constant="20" symbolic="YES" id="XLf-bu-fzR"/>
+                                    <constraint firstItem="b1e-te-iiR" firstAttribute="width" secondItem="4Lv-nc-Zqn" secondAttribute="width" multiplier="0.867021" id="ivw-Yu-wcH"/>
+                                    <constraint firstItem="4Lv-nc-Zqn" firstAttribute="height" secondItem="b1e-te-iiR" secondAttribute="height" id="r41-HO-SUd"/>
+                                </constraints>
+                            </view>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemIndigoColor"/>
+                        <constraints>
+                            <constraint firstItem="f2m-ex-Q7p" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" constant="34" id="b54-es-zG8"/>
+                            <constraint firstItem="f2m-ex-Q7p" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="pcA-cp-75g"/>
+                        </constraints>
                     </view>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" title="MEN" leftItemsSupplementBackButton="YES" id="U1q-u9-cM2">
+                        <barButtonItem key="rightBarButtonItem" title="Item" image="bag" id="gQd-5M-T0s"/>
+                    </navigationItem>
+                    <nil key="simulatedBottomBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="334.78260869565219" y="10.714285714285714"/>
         </scene>
     </scenes>
+    <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+    <resources>
+        <image name="appleIcon" width="14" height="18"/>
+        <image name="bag" width="24" height="24"/>
+        <systemColor name="systemGray4Color">
+            <color red="0.81960784313725488" green="0.81960784313725488" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemIndigoColor">
+            <color red="0.34509803921568627" green="0.33725490196078434" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
 </document>
