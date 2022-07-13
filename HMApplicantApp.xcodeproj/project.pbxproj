@@ -15,6 +15,8 @@
 		3E3E1E042875D802009867D5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3E3E1E022875D802009867D5 /* LaunchScreen.storyboard */; };
 		3E3E1E292875D83C009867D5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E3E1E282875D83C009867D5 /* ContentView.swift */; };
 		4F41364C287BB4DA00F6EB00 /* DummyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F41364B287BB4DA00F6EB00 /* DummyViewController.swift */; };
+		4FAE5371287E756B009AAC8B /* ImageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FAE536F287E756B009AAC8B /* ImageTableViewCell.swift */; };
+		4FAE5372287E756B009AAC8B /* ImageTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4FAE5370287E756B009AAC8B /* ImageTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +30,8 @@
 		3E3E1E052875D802009867D5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3E3E1E282875D83C009867D5 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		4F41364B287BB4DA00F6EB00 /* DummyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DummyViewController.swift; sourceTree = "<group>"; };
+		4FAE536F287E756B009AAC8B /* ImageTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageTableViewCell.swift; sourceTree = "<group>"; };
+		4FAE5370287E756B009AAC8B /* ImageTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ImageTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +78,8 @@
 			isa = PBXGroup;
 			children = (
 				3E3E1DFB2875D801009867D5 /* ViewController.swift */,
+				4FAE536F287E756B009AAC8B /* ImageTableViewCell.swift */,
+				4FAE5370287E756B009AAC8B /* ImageTableViewCell.xib */,
 				3E3E1DFD2875D801009867D5 /* Main.storyboard */,
 				3E3E1E022875D802009867D5 /* LaunchScreen.storyboard */,
 				4F41364B287BB4DA00F6EB00 /* DummyViewController.swift */,
@@ -148,6 +154,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3E3E1E042875D802009867D5 /* LaunchScreen.storyboard in Resources */,
+				4FAE5372287E756B009AAC8B /* ImageTableViewCell.xib in Resources */,
 				3E3E1E012875D802009867D5 /* Assets.xcassets in Resources */,
 				3E3E1DFF2875D801009867D5 /* Main.storyboard in Resources */,
 			);
@@ -163,6 +170,7 @@
 				3E3E1DFC2875D801009867D5 /* ViewController.swift in Sources */,
 				3E3E1DF82875D801009867D5 /* AppDelegate.swift in Sources */,
 				3E3E1E292875D83C009867D5 /* ContentView.swift in Sources */,
+				4FAE5371287E756B009AAC8B /* ImageTableViewCell.swift in Sources */,
 				3E3E1DFA2875D801009867D5 /* SceneDelegate.swift in Sources */,
 				4F41364C287BB4DA00F6EB00 /* DummyViewController.swift in Sources */,
 			);

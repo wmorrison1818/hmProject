@@ -11,7 +11,6 @@
         <!--Dummy Table View Controller-->
         <scene sceneID="JVT-ZF-0PW">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Fz3-v6-GKE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <tableViewController id="NJy-3E-7LQ" customClass="DummyTableViewController" customModule="HMApplicantApp" customModuleProvider="target" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="xZd-z0-Cif">
                         <barButtonItem key="rightBarButtonItem" title="Item" id="Hvx-fK-cnY">
@@ -21,6 +20,7 @@
                         </barButtonItem>
                     </navigationItem>
                 </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Fz3-v6-GKE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-473" y="12"/>
         </scene>
@@ -86,12 +86,30 @@
                                     <constraint firstItem="4Lv-nc-Zqn" firstAttribute="height" secondItem="b1e-te-iiR" secondAttribute="height" id="r41-HO-SUd"/>
                                 </constraints>
                             </view>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="Tz6-Fv-dtD">
+                                <rect key="frame" x="0.0" y="88" width="414" height="722"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" rowHeight="110" id="WQQ-cE-aoz">
+                                        <rect key="frame" x="0.0" y="44.5" width="414" height="110"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="WQQ-cE-aoz" id="d3j-IN-1Ge">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="110"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemIndigoColor"/>
                         <constraints>
+                            <constraint firstItem="Tz6-Fv-dtD" firstAttribute="trailing" secondItem="f2m-ex-Q7p" secondAttribute="trailing" id="18n-cO-iwA"/>
+                            <constraint firstItem="Tz6-Fv-dtD" firstAttribute="leading" secondItem="f2m-ex-Q7p" secondAttribute="leading" id="4ja-Dm-kyJ"/>
+                            <constraint firstItem="Tz6-Fv-dtD" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="6Oo-80-raJ"/>
                             <constraint firstItem="f2m-ex-Q7p" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" constant="34" id="b54-es-zG8"/>
                             <constraint firstItem="f2m-ex-Q7p" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="pcA-cp-75g"/>
+                            <constraint firstItem="f2m-ex-Q7p" firstAttribute="top" secondItem="Tz6-Fv-dtD" secondAttribute="bottom" id="wSp-uk-Npf"/>
                         </constraints>
                     </view>
                     <toolbarItems/>
@@ -99,6 +117,9 @@
                         <barButtonItem key="rightBarButtonItem" title="Item" image="bag" id="gQd-5M-T0s"/>
                     </navigationItem>
                     <nil key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="mainUITableView" destination="Tz6-Fv-dtD" id="55w-0U-9bS"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -109,6 +130,9 @@
     <resources>
         <image name="appleIcon" width="14" height="18"/>
         <image name="bag" width="24" height="24"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
         <systemColor name="systemGray4Color">
             <color red="0.81960784313725488" green="0.81960784313725488" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
