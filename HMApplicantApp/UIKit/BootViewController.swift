@@ -9,7 +9,7 @@ import UIKit
 import SwiftUI
 
 // TODO: Handle constraints across views better.
-class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+class BootViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     @IBOutlet weak var mainUITableView: UITableView!
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
