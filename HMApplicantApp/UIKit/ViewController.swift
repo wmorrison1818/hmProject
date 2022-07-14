@@ -20,7 +20,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = Bundle.main.loadNibNamed("ImageTableViewCell", owner: self, options: nil)?.first as! ImageTableViewCell
-        cell.descriptionLabel.text = "hello"
+        cell.descriptionLabel.text = "Cody James Men's Hamshackle Light Wash Strecked Relaxed Boot Jeans"
         return cell
     }
     
