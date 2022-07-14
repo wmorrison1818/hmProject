@@ -11,7 +11,6 @@ import UIKit
 // TODO: Probably not worth my time to make this an actual table view controller.
 // I used a tableViewController because that is the default view that comes with a navigationController.
 class DummyTableViewController: UITableViewController {
-    var shoppingList: [String] = ["Men's boots"]
     
     override func viewDidLoad() {
         super.viewDidLoad()

@@ -8,9 +8,7 @@
 import UIKit
 import SwiftUI
 
-// TODO: Clean up image table view cell.
 // TODO: Handle constraints across views better.
-// TODO: Consider creating another cell for demonstrative purposes
 class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     @IBOutlet weak var mainUITableView: UITableView!
     
